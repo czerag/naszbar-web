@@ -1,0 +1,47 @@
+body {
+  overflow: hidden;
+}
+.root {
+  overflow: unset;
+}
+body .animated-bg {
+  width: 150%;
+  height: 110%;
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  bottom: -5%;
+  z-index: -1;
+  background-color: #231f24;
+  background-image: radial-gradient(circle, #231f24 60%, #0000 75%, #0000 100%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #231f24 50%, #231f24 100%),
+    linear-gradient(90deg, #9a19ab 4%, #0000 10%),
+    linear-gradient(
+      180deg,
+      #0000 0%,
+      #0000 14%,
+      #f400ff 22%,
+      #0000 28%,
+      rgba(0, 0, 0, 0) 40%,
+      #3ce6e1 48%,
+      #0000 53%,
+      #45f4e6 72%,
+      #e200ff 86%,
+      #0000 100%
+    ),
+    linear-gradient(90deg, #4fcbbb 1%, #ad39ad 10%, #00c9b0 15%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
+  background-size: 105% 75%;
+  animation: smoke 20s linear infinite;
+  filter: blur(10px) url('#filter') blur(10px) url('#filter');
+}
+@keyframes smoke {
+  0% {
+    background-position: 100% 300%;
+  }
+  50% {
+    background-position: 0% 150%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}

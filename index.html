@@ -3,11 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/styles/animated-bg.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>NASZBAR</title>
   </head>
   <body>
+    <svg width="0" style="display: none">
+      <filter id="filter">
+        <feTurbulence id="turbulence" type="fractalNoise" seed="10" baseFrequency=".02 .02" numOctaves="50" />
+        <feDisplacementMap in="SourceGraphic" scale="90" />
+      </filter>
+    </svg>
+    <div class="animated-bg"></div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
+
