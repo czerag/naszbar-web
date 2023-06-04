@@ -1,4 +1,4 @@
-.Navbar {
+.Header {
   padding: 12px;
   height: 70px;
   width: 100%;
@@ -7,30 +7,34 @@
   backdrop-filter: blur(8px);
   box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.33);
 }
-.Navbar .Navbar-nav {
+.Header .Header-nav {
   font-weight: 700;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-}
-.Navbar .Navbar-nav a {
-  padding: 0 10px;
-  display: inline-flex;
+  height: 100%;
+  display: flex;
   align-items: center;
 }
-.Navbar .Navbar-nav a.active {
-  color: var(--color-purple);
+.Header .Header-nav a {
+  padding: 0 10px;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  border-left: solid 2px var(--color-black);
 }
-.Navbar .Navbar-nav .icon {
+.Header .Header-nav a.active {
+  color: var(--color-purple);
+  border-bottom: solid 1px var(--color-purple);
+}
+.Header .Header-nav .icon {
   margin-right: 5px;
 }
-.Navbar .Navbar-nav a.active .icon {
+.Header .Header-nav a.active .icon {
   fill: var(--color-purple);
 }
-.Navbar .Navbar-user {
+.Header .Header-user {
   width: 50px;
   height: 100%;
   border-radius: 50%;
+  margin-left: auto;
   background-color: var(--color-white);
 }
 .Searchbar {

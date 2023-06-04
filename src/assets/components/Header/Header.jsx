@@ -3,13 +3,13 @@ import { Searchbar } from './Searchbar';
 import { ReactComponent as GlobeIcon } from '../../icons/globe.svg';
 import { ReactComponent as CocktailIcon } from '../../icons/cocktail.svg';
 import { ReactComponent as HeartIcon } from '../../icons/heart.svg';
-import './Navbar.css';
+import './Header.css';
 
-export const Navbar = () => {
+export const Header = () => {
   return (
-    <header className="Navbar">
+    <header className="Header">
       <Searchbar />
-      <nav className="Navbar-nav">
+      <nav className="Header-nav">
         <NavLink className="navbar-link" to={`/`}>
           <GlobeIcon className="icon" /> Nowości
         </NavLink>
@@ -17,10 +17,10 @@ export const Navbar = () => {
           <CocktailIcon className="icon" /> Przepisy
         </NavLink>
         <NavLink className="navbar-link" to={`/my-recipes`}>
-          <HeartIcon className="icon" /> Moje Przepisy
+          <HeartIcon className="icon" /> Moje&nbsp;Przepisy
         </NavLink>
       </nav>
-      <div className="Navbar-user"></div>
+      <div className="Header-user"></div>
     </header>
   );
 };
