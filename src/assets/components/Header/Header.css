@@ -39,8 +39,9 @@
 }
 .Searchbar {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   padding: 12px;
+  margin: 0 10px;
   border: none;
   background-color: rgba(35, 31, 36, 0.2);
   border: solid 1px var(--color-black);
@@ -48,4 +49,10 @@
 .Searchbar::placeholder {
   color: var(--color-white);
   opacity: 0.5;
+}
+
+@media only screen and (max-width: 1023px) {
+  .Header .Header-nav {
+    display: none;
+  }
 }

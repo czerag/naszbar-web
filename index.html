@@ -8,13 +8,15 @@
     <title>NASZBAR</title>
   </head>
   <body>
-    <svg width="0" style="display: none">
+    <!-- for animated css bg, replaced due to gpu high usage <svg width="0" style="display: none">
       <filter id="filter">
         <feTurbulence id="turbulence" type="fractalNoise" seed="10" baseFrequency=".02 .02" numOctaves="50" />
         <feDisplacementMap in="SourceGraphic" scale="90" />
       </filter>
-    </svg>
-    <div class="animated-bg"></div>
+    </svg> -->
+    <video autoplay="" class="bg-video" loop="loop" muted="" preload="auto">
+      <source src="/src/assets/bg-smoke.m4v" type="video/mp4" />
+    </video>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

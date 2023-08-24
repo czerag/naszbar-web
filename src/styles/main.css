@@ -31,6 +31,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background: url(/src/assets/bg-smoke.webp) fixed no-repeat 12% top / cover;
 }
 
 img {
